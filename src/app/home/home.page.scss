@@ -1,0 +1,119 @@
+.container {
+  height: 100%; 
+  width:100%; 
+  background-color: rgb(46, 45, 45);
+}
+
+.menuContainer {
+  float: right;
+}
+
+.menu {
+  color: white; 
+  width: 30px; 
+  height: 30px;
+}
+
+.title {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: white; 
+  margin-top: 60px; 
+  margin-left: 30px;
+}
+
+.receiverIdInputContainer {
+  --ion-item-background: rgb(46, 45, 45); 
+  --highlight-color-focused: none; 
+  margin-left: 20px; 
+  margin-right: 20px; 
+  border: 2px solid black;
+}
+
+.receiverIdInput {
+  font-size: 24px; 
+  color: white;
+}
+
+.receiverTypeSegment {
+  margin-left: 20px; 
+  margin-right: 20px; 
+  width: 90%
+}
+
+.enterTextMessageTitle {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: white; 
+  margin-top: 60px; 
+  margin-left: 30px;
+}
+
+.textMessageInputContainer {
+  --ion-item-background: rgb(46, 45, 45); 
+  --highlight-color-focused: none; 
+  margin-left: 20px; 
+  margin-right: 20px; 
+  border: 2px solid black;
+}
+
+.textMessageInput {
+  font-size: 24px; 
+  color: white;
+}
+
+.buttonsContainer {
+  margin-left: 30px; 
+  clear: both; 
+  height: 50px;
+}
+
+.leftSideButton {
+  height: 50px; 
+  width: 150px; 
+  float: left; 
+  text-align: center;
+  background-color: rgba(18, 152, 214, 0.836); 
+  color: #fff;
+  margin-right: 30px; 
+  padding-top: 15px; 
+  border-radius: 15px;
+}
+
+.rightSideButton {
+  height: 50px; 
+  width: 150px; 
+  float: left; 
+  text-align: center;
+  background-color: rgba(18, 152, 214, 0.836); 
+  color: #fff; 
+  padding-top: 15px; 
+  border-radius: 15px;
+}
+
+.centerButton {
+  height: 50px; 
+  width: 180px; 
+  float: left; 
+  text-align: center;
+  background-color: rgba(18, 152, 214, 0.836); 
+  color: #fff; 
+  margin-right: 30px; 
+  padding-top: 15px; 
+  border-radius: 15px;
+}
+
+.centerButtonContainer {
+  margin-left: 110px; 
+  clear: both; 
+  height: 50px;
+}
+
+ion-segment-button {
+  --background-checked: var(--ion-color-success);
+  --color-checked: var(--ion-color-success-contrast);
+}
+
+.my-custom-class .action-sheet-wrapper .action-sheet-container .action-sheet-group .action-sheet-title {
+  font-size: 24px;
+}

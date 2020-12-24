@@ -1,0 +1,42 @@
+.container {
+    height: 100%; 
+    width: 100%; 
+    background-color: rgb(46, 45, 45);
+}
+
+.signInText {
+    font-size: 32px; 
+    font-weight: bold; 
+    color: white; 
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.signInSubText{
+    font-size: 24px; 
+    font-weight: bold; 
+    color: white; 
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.inputBoxContainer {
+    --ion-item-background: rgb(46, 45, 45); 
+    --highlight-color-focused: none; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    border: 2px solid black; 
+    border-top-left-radius: 24px; 
+    border-top-right-radius: 24px; 
+    border-bottom-left-radius: 24px; 
+    border-bottom-right-radius: 24px;
+}
+
+.inputBox {
+    font-size: 18px; 
+    color: white;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 32px;
+}

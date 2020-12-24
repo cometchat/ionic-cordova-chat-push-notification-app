@@ -1,0 +1,79 @@
+<ion-content no-bounce has-bouncing="false" forceOverscroll="false" overflow-scroll="true">
+  <div class="container">
+    <div>
+      <img src="../assets/cc.png" class="appLogo">
+    </div>
+
+    <br/>
+
+    <div>
+      <span class="appName">CometChat</span>
+    </div>
+    
+
+    <div>
+      <span class="title">Push Notification</span>
+    </div>
+
+    
+
+    <div>
+      <span class="title">Sample App</span>
+    </div>
+
+    <br/>
+
+    <div>
+      <span class="loginTextContainer">
+        <span class="loginText">Login with one of our sample users</span>
+      </span>
+    </div>
+
+    <br/>
+
+    <div class="sampleLoginContainer">
+
+      <div class="sampleLoginDivOdd" (click)="onSubmit('superhero1')">
+        <img src="../assets/ironman.png" class="sampleLoginIcon">
+        <div class="sampleLoginId">SUPERHERO1</div>
+      </div>
+
+      <div class="sampleLoginDivEven" (click)="onSubmit('superhero2')" >
+        <img src="../assets/captainamerica.png" class="sampleLoginIcon">
+        <div class="sampleLoginId">SUPERHERO2</div>
+      </div>
+
+    </div>
+
+    <br/>
+      
+    <div class="sampleLoginContainer">
+
+      <div class="sampleLoginDivOdd" (click)="onSubmit('superhero3')">
+        <img src="../assets/spiderman.png" class="sampleLoginIcon">
+        <div class="sampleLoginId">SUPERHERO3</div>
+      </div>
+
+      <div class="sampleLoginDivEven" (click)="onSubmit('superhero4')">
+        <img src="../assets/wolverine.png" class="sampleLoginIcon">
+        <div class="sampleLoginId">SUPERHERO4</div>
+      </div>
+
+    </div>
+    
+    <br/>
+    
+    <div>
+      <span class="loginAlternativeText">or else continue login with</span>
+    </div>
+
+    <br/>
+
+    <div>
+      <ion-button expand="block" color="dark" (click)="loginViaCustomUID()"> 
+        <ion-label class="loginAlternativeButtonText">LOGIN USING UID</ion-label>
+      </ion-button>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,88 @@
+.container {
+    height: 100%; 
+    width: 100%; 
+    background-color: rgb(46, 45, 45);
+}
+
+.appLogo {
+    height: 120px; 
+    width: 120px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.appName {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: rgb(196, 191, 191); 
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.title {
+    font-size: 32px; 
+    font-weight: bold; 
+    color: rgba(0, 132, 255, 0.952); 
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.loginTextContainer {
+    display: inline-block; 
+    margin-left: 30px;
+}
+
+.loginText {
+    font-size: 24px;
+    text-align: center; 
+    color: rgb(196, 191, 191);
+}
+
+.sampleLoginContainer {
+    margin-left: 30px; 
+    clear: both; 
+    height: 50px;
+}
+
+.sampleLoginDivOdd {
+    height: 50px; 
+    width: 150px; 
+    float: left; 
+    text-align: center;
+    background-color: black; 
+    color: #fff; 
+    margin-right: 30px;
+}
+
+.sampleLoginIcon {
+    height: 32px; 
+    width: 32px; 
+    float: left; 
+    margin-left: 4px; 
+    margin-top: 10px;
+}
+
+.sampleLoginId {
+    margin-top: 15px; 
+    height: 25px;
+}
+
+.sampleLoginDivEven {
+    height: 50px; 
+    width: 150px; 
+    float: left; 
+    text-align: center;
+    background-color: black; 
+    color: #fff;
+}
+
+.loginAlternativeText {
+    font-size: 24px;
+    text-align: center; 
+    color: rgb(196, 191, 191); 
+    margin-left: 30px;
+}
+
+.loginAlternativeButtonText {
+    font-size: 18px;
+}

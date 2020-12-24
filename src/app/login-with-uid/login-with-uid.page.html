@@ -1,0 +1,43 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>LoginWithUid</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content no-bounce has-bouncing="false" forceOverscroll="false" overflow-scroll="true">
+  <div class="container">
+    
+    <br/>
+
+    <br/>
+
+    <div>
+      <span class="signInText">Sign In</span>
+    </div>
+
+    <br/>
+
+    <div>
+      <span class="signInSubText">Welcome to CometChat</span>
+    </div>
+
+    <br/>
+
+    <div>
+      <span class="signInSubText">Please enter UID to continue</span>
+    </div>
+
+    <br/>
+
+    <br/>
+
+    <br/>
+    
+    <ion-item class="inputBoxContainer">
+      <ion-input color="dark" class="inputBox" [(ngModel)]="uid" placeholder="Enter UID"></ion-input>
+      <ion-icon name="chevron-forward-outline" size="large" (click)="onSubmit()"></ion-icon>
+    </ion-item>
+
+  </div>
+
+</ion-content>

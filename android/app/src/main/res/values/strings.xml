@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CometChat Pro Push Notifications Sample app</string>
+    <string name="title_activity_main">CometChat Pro Push Notifications Sample app</string>
+    <string name="package_name">com.inscripts.ionic</string>
+    <string name="custom_url_scheme">com.inscripts.ionic</string>
+</resources>

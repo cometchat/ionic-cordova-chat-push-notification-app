@@ -1,0 +1,87 @@
+<ion-content no-bounce  has-bouncing="false" forceOverscroll="false">
+  <div class="container">
+
+    <br/>
+    
+    <ion-button fill="clear" slot="end" size="small" icon-only (click)="presentActionSheet($event)" class="menuContainer">
+      <ion-icon class="menu" name="menu"></ion-icon>
+    </ion-button>
+
+    <br/>
+    <br/>
+
+    <div>
+      <span class="title">Push Notification</span>
+    </div>
+
+    <br/>
+
+    <ion-item class="receiverIdInputContainer">
+      <ion-input color="dark" class="receiverIdInput" [placeholder]="placeHolder" [(ngModel)]="receiverId"></ion-input>
+    </ion-item>
+
+    <br/>
+
+    <ion-segment mode="ios" [(ngModel)]="receiverType" (ionChange)="segmentChanged($event)" color="primary" class="receiverTypeSegment">
+      <ion-segment-button value="user">
+        <ion-label>User</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="group">
+        <ion-label>Group</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    
+    <br/>
+    <br/>
+    <br/>
+
+    <div>
+      <span class="enterTextMessageTitle">Enter Text Message</span>
+    </div>
+
+    <br/>
+
+    <ion-item class="textMessageInputContainer">
+      <ion-input color="dark" class="textMessageInput" placeholder="message" [(ngModel)]="textMessage"></ion-input>
+    </ion-item>
+    
+    <br/>
+
+    <div class="buttonsContainer">
+
+      <div class="leftSideButton" (click)="sendMessage('text')">
+        <span>TEXT MESSAGE</span>
+      </div>
+
+      <div class="rightSideButton" (click)="sendMessage('media')" >
+        <span>MEDIA MESSAGE</span>
+      </div>
+
+    </div>
+
+    <br/>
+      
+    <div class="buttonsContainer">
+
+      <div class="leftSideButton" (click)="initiateCall('audio')">
+        <span>AUDIO CALL</span>
+      </div>
+
+      <div class="rightSideButton" (click)="initiateCall('video')">
+        <span>VIDEO CALL</span>
+      </div>
+
+    </div>
+
+    <br/>
+      
+    <div class="centerButtonContainer">
+
+      <div class="centerButton" (click)="sendMessage('custom')">
+        <span>CUSTOM MESSAGE</span>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>
