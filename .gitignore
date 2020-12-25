@@ -28,3 +28,7 @@ npm-debug.log*
 /node_modules
 /plugins
 /www
+
+# FCM Credentials files
+android/app/google-services.json
+ios/App/GoogleService-Info.plist

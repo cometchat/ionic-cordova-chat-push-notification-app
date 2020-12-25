@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CometChat } from '@cometchat-pro/cordova-ionic-chat';
 import { Plugins, PushNotification, PushNotificationToken, PushNotificationActionPerformed, NotificationChannel } from '@capacitor/core';
 const { PushNotifications, Storage, LocalNotifications } = Plugins;
+import  COMETCHAT_DETAILS from '../../consts';
 
 @Component({
     selector: 'app-login',
@@ -14,9 +15,9 @@ const { PushNotifications, Storage, LocalNotifications } = Plugins;
 export class LoginPage implements OnInit {
     public userUID: string;
     // tslint:disable-next-line:no-inferrable-types
-    public appID: string = "24958738083736c";
-    public apiKey: string = "8a5eb7dfb907f21dd697cf3e4cce4263f487d65d";
-    public appRegion: string = "us";
+    public appId: string = COMETCHAT_DETAILS.appId;
+    public authKey: string = COMETCHAT_DETAILS.authKey;
+    public region: string = COMETCHAT_DETAILS.region;
     
 
     public chatID: string = 'superhero1';
@@ -28,7 +29,7 @@ export class LoginPage implements OnInit {
         private alertController: AlertController,
         private router: Router,
         private platform: Platform) {
-        CometChat.init(this.appID, new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(this.appRegion).build()).then(
+        CometChat.init(this.appId, new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(this.region).build()).then(
             initialized => {
                 console.log("Initialized", initialized);
                 if (initialized) {
@@ -143,7 +144,7 @@ export class LoginPage implements OnInit {
             translucent: true
         });
         loading.present();
-        CometChat.login(this.userUID, this.apiKey).then(
+        CometChat.login(this.userUID, this.authKey).then(
             async user => {
                 console.log("user Login via apiKey", user);
                 loading.dismiss();

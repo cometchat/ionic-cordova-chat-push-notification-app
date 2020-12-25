@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CometChat } from '@cometchat-pro/cordova-ionic-chat';
 import { Plugins } from '@capacitor/core';
 const {  Storage } = Plugins;
+import COMETCHAT_DETAILS from '../../consts';
 
 @Component({
   selector: 'app-login-with-uid',
@@ -33,7 +34,7 @@ export class LoginWithUidPage implements OnInit {
         translucent: true
     });
     loading.present();
-    CometChat.login(this.uid, "8a5eb7dfb907f21dd697cf3e4cce4263f487d65d").then(
+    CometChat.login(this.uid, COMETCHAT_DETAILS.authKey).then(
       async user => {
         console.log("user Login via apiKey", user);
         loading.dismiss();
